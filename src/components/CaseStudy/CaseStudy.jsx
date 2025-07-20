@@ -1,31 +1,23 @@
-import React from "react";
-
+import "./CaseStude.css";
+import { Button } from "../ui/button/Button";
+import SectionHeader from "../ui/header/SectionHeader";
 const CaseStudy = () => {
   return (
     <section className="case-study-section">
       <div className="container">
-        <div className="image-column">
+        <div className="column1">
           <div className="image-wrapper">
-            <img
-              src="./src/assets/images/case-study.png"
-              alt="Case Study"
-              className="case-image"
-            />
+            <img src="./src/assets/images/case-study.png" className="case-image" />
           </div>
         </div>
-
-        <div className="text-column">
-          <p className="tagline">Case Study</p>
-          <h2 className="title">
-            Turning IT Challenges Into Growth Opportunities.
-          </h2>
-          <p className="description">
-            Enabled 99.9% uptime for a global energy leader, reducing downtime
-            by 20% through proactive monitoring and optimized workflows.
-            Delivered end-to-end migration support for improved reliability and
-            compliance readiness.
-          </p>
-          <button className="discover-btn">Discover More</button>
+        <div className="column2">
+          <SectionHeader name="CASE STUDY" type="Main" />
+          <SectionHeader name="Turning IT Challenges Into Growth Opportunities." type="Sub" />
+          <SectionHeader
+            name="Enabled 99.9% uptime for a global energy leader, reducing downtime by 20% through proactive monitoring and optimized workflows. Delivered end-to-end migration support for improved reliability and compliance readiness."
+            type="Desc"
+          />
+          <Button name="Discover More" />
         </div>
       </div>
     </section>

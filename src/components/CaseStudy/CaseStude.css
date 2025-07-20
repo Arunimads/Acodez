@@ -1,0 +1,50 @@
+.case-study-section {
+  background-color: white;
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.column1,
+.column2 {
+  flex: 1;
+}
+
+.image-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.case-image {
+  width: 100%;
+ 
+}
+
+.discover-btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: #1e40af;
+}

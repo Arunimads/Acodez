@@ -1,0 +1,23 @@
+.main-header{
+    color: #0367a1e5;
+          font-weight: 500;
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+          margin-bottom: 16px;
+}
+
+.sub-header{
+    font-size: 2.0rem;
+          font-weight: 500;
+          margin-bottom: 24px;
+          color: #1a1a1a;
+          line-height: 1.2;
+}
+
+.desc-header{
+          color: #666;
+          font-size: 1.1rem;
+          margin-bottom: 32px;
+          line-height: 1.6;
+          max-width: 400px;
+        }

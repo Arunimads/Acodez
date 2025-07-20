@@ -1,6 +1,6 @@
-// src/components/Sustainability.jsx
-import React from "react";
-
+import "./Sustainability.css";
+import SectionHeader from "../ui/header/SectionHeader";
+import { Button } from "../ui/button/Button";
 const Sustainability = () => {
   return (
     <section className="sustainability-section">
@@ -19,31 +19,31 @@ const Sustainability = () => {
             <div className="brand-text">EXCELLENCE</div>
           </div>
           <div className="brand-element">
-            <div className="brand-word">DARA</div>
+            <div className="brand-circle">
+              <span className="brand-circle-dara">DARA</span>
+            </div>
+            <div className="brand-text">STREAM</div>
           </div>
         </div>
 
         <div className="sustainability-right">
           <div className="sustainability-content">
-            <p className="sustainability-subtitle">SUSTAINABILITY</p>
-            <h2 className="sustainability-title">
-              Shaping A Sustainable Future Together.
-            </h2>
-            <p className="sustainability-description">
-              At Skedara, sustainability is at the core of every service we
-              deliver. Our green IT practices and ESG-aligned solutions empower
-              clients to operate responsibly while building future-ready
-              systems.
-            </p>
-            <button className="sustainability-btn">
-              Explore Sustainability Goals
-            </button>
+            <SectionHeader name="SUSTAINABILITY" type="Main" />
+            <SectionHeader
+              name="Shaping A Sustainable Future Together."
+              type="Sub"
+            />
+            <SectionHeader
+              name="At Skedara, sustainability is at the core of every service we deliver. Our green IT practices and ESG-aligned solutions empower clients to operate responsibly while
+              building future-ready systems."
+              type="Desc"
+            />
+            <Button name="Explore Sustainability Goals" />
           </div>
 
           <div className="tree-bulb-container">
             <img
               src="./src/assets/images/tree-bulb.png"
-              alt="Sustainable Innovation"
               className="tree-bulb-image"
             />
           </div>
@@ -51,7 +51,6 @@ const Sustainability = () => {
           <div className="curly-line-container">
             <img
               src="./src/assets/images/curly-arrow.png"
-              alt="Design Element"
               className="curly-line-image"
             />
           </div>

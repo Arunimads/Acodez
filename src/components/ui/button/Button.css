@@ -1,0 +1,16 @@
+.btn-class {
+          background-color: #002366;
+          color: #fff;
+          padding: 14px 28px;
+          border: none;
+          border-radius: 25px;
+          font-weight: 500;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .btn-class:hover {
+          background-color: #1e40af;
+          transform: translateY(-2px);
+        }
