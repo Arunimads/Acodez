@@ -1,30 +1,45 @@
-
-
-        .sustainability-section {
+.sustainability-section {
       background-color: #f1f5f9;
-      padding: 5rem 2rem;
+      padding: 0;
       min-height: 100vh;
       display: flex;
       align-items: center;
+      position: relative;
     }
 
     .sustainability-container {
       display: flex;
       justify-content: space-between;
-      gap: 4rem;
+      gap: 0;
       width: 100%;
       max-width: 1200px;
       margin: auto;
+      position: relative;
+      z-index: 2;
     }
 
     .sustainability-left {
-      flex: 0 0 180px;
+      flex: 0 0 20%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      /* justify-content: center; */
       align-items: left;
       gap: 2rem;
-       background-color: #f1f5f9;
+      background-color: white;
+      padding: 5rem 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .sustainability-left::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      z-index: -1;
     }
 
     .brand-element {
@@ -66,10 +81,13 @@
     }
 
     .sustainability-right {
-      flex: 1;
+      flex: 0 0 70%;
       display: flex;
-      align-items: center;
+      /* align-items: center; */
       position: relative;
+      background-color: #f1f5f9;
+      padding: 5rem 2rem;
+      min-height: 100vh;
     }
 
     .sustainability-content {
@@ -118,9 +136,9 @@
 
     .tree-bulb-container {
       position: absolute;
-      right: 100px;
-      top: 50%;
-      transform: translateY(-40%);
+    right: 17px;
+    top: 38%;
+    transform: translateY(-40%);
     }
 
     .tree-bulb-image {
@@ -129,9 +147,9 @@
     }
 
     .curly-line-container {
-      position: absolute;
-      right: 160px;
-      top: 50px;
+     position: absolute;
+    right: 211px;
+    top: 141px;
     }
 
     .curly-line-image {
@@ -140,6 +158,10 @@
     }
 
     @media (max-width: 1024px) {
+      .sustainability-section {
+        background: #f1f5f9;
+      }
+
       .sustainability-container {
         flex-direction: column;
         align-items: center;
@@ -147,17 +169,26 @@
       }
 
       .sustainability-left {
+        flex: none;
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
+        background-color: #f1f5f9;
+        padding: 2rem;
+        min-height: auto;
+        width: 100%;
+      }
+
+      .sustainability-right {
+        flex: none;
+        margin-top: 3rem;
+        padding: 2rem;
+        min-height: auto;
+        width: 100%;
       }
 
       .brand-word {
         margin-top: 0;
-      }
-
-      .sustainability-right {
-        margin-top: 3rem;
       }
 
       .tree-bulb-container,
@@ -174,4 +205,3 @@
         margin: 0 auto;
       }
     }
-
